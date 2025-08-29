@@ -372,7 +372,7 @@ export default function Home() {
                     "NeonDB",
                     "Prisma",
                   ],
-                  link: "https://hospital-management-demo.vercel.app",
+                  link: "https://drive.google.com/file/d/1dlKlr8u-1hBUKSI64Vs4gkNoytNC5fGx/view?usp=sharing",
                 },
                 {
                   duration: "Jul 2025 - Aug 2025",
@@ -402,7 +402,7 @@ export default function Home() {
                     "GoogleAuth",
                     "JWT",
                   ],
-                  link: "https://github.com/igauravgupta/adhd-tracker-backend",
+                  link: "https://drive.google.com/file/d/1dlKlr8u-1hBUKSI64Vs4gkNoytNC5fGx/view?usp=sharing",
                 },
                 {
                   duration: "Sept 2024 - Nov 2024",

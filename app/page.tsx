@@ -402,7 +402,7 @@ export default function Home() {
                     "GoogleAuth",
                     "JWT",
                   ],
-                  link: "https://drive.google.com/file/d/1dlKlr8u-1hBUKSI64Vs4gkNoytNC5fGx/view?usp=sharing",
+                  link: "https://drive.google.com/file/d/1POwMvY7T-k5bFSL1jfhYzmXHZICoK-ps/view?usp=sharing",
                 },
                 {
                   duration: "Sept 2024 - Nov 2024",

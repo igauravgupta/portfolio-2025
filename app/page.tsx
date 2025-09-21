@@ -135,7 +135,7 @@ export default function Home() {
                   </div>
 
                   <Link
-                    href="https://drive.google.com/file/d/1aRREttyH8O5JppBUMr9dCPVRmm2Ar7xB/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1ZafehpLA1fSrw2R6HTaXm80Wcb3bLGw-/view?usp=sharing"
                     download="Gaurav_Gupta_Resume.pdf"
                     className="group w-full p-4 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300 hover:shadow-sm flex items-center justify-center gap-2"
                   >
@@ -372,7 +372,7 @@ export default function Home() {
                     "NeonDB",
                     "Prisma",
                   ],
-                  link: "https://drive.google.com/file/d/1dlKlr8u-1hBUKSI64Vs4gkNoytNC5fGx/view?usp=sharing",
+                  link: "https://drive.google.com/file/d/1t6IiNBz8YutQvVl979smWWABV0c4wlsv/view?usp=sharing",
                 },
                 {
                   duration: "Jul 2025 - Aug 2025",
@@ -402,7 +402,7 @@ export default function Home() {
                     "GoogleAuth",
                     "JWT",
                   ],
-                  link: "https://drive.google.com/file/d/1POwMvY7T-k5bFSL1jfhYzmXHZICoK-ps/view?usp=sharing",
+                  link: "https://drive.google.com/file/d/1-aUHlcTfBhDdlwl4cvzB331fhGEP4ZOm/view?usp=sharing",
                 },
                 {
                   duration: "Sept 2024 - Nov 2024",

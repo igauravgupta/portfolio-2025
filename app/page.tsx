@@ -36,6 +36,43 @@ export default function Home() {
     setIsDark(!isDark);
   };
 
+  // experiences array extracted so we can reference neighbors and render
+  // a timeline connector for consecutive roles in the same company
+  const experiences = [
+    {
+      duration: "April 2025 - Present",
+      role: "Software Engineer Trainee",
+      company: "vemakers",
+      description:
+        "Working on a comprehensive Hospital Management System with an admin panel, doctor portal, and integrated patient management features.",
+      tech: ["React.js", "Node.js", "Express.js", "NeonDB", "Prisma"],
+    },
+    {
+      duration: "Jan 2025 - April 2025",
+      role: "Backend Developer Intern",
+      company: "vemakers",
+      description:
+        "Developed a scalable ADHD Tracker backend with secure JWT authentication, optimized MongoDB queries (40% faster), REST APIs, and seamless Flutter integration, improving efficiency and data security by 50%.",
+      tech: ["Node.js", "Express.js", "MongoDB", "GoogleAuth", "JWT"],
+    },
+    {
+      duration: "Jul 2025 - Aug 2025",
+      role: "MERN Development Intern",
+      company: "Anany Pahal Foundation",
+      description:
+        "Designed and developed the Anany Pahal Foundation website with an integrated payment gateway for seamless online donations.",
+      tech: ["React.js", "Node.js", "Framer Motion", "Express.js", "MongoDB"],
+    },
+    {
+      duration: "Sept 2024 - Nov 2024",
+      role: "Full Stack Intern",
+      company: "Sajal Tech Solutions Pvt. Ltd.",
+      description:
+        "Built a full-stack Q&A platform for car enthusiasts with a reputation system, 7+ optimized REST APIs, JWT authentication, and a responsive React-Tailwind frontend, reducing spam by 50% and boosting engagement by 40%.",
+      tech: ["React", "Node.js", "Express.js", "MongoDB"],
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-background text-foreground relative">
       <nav className="fixed left-8 top-1/2 -translate-y-1/2 z-10 hidden lg:block">
@@ -62,7 +99,9 @@ export default function Home() {
       <main className="max-w-4xl mx-auto px-8 lg:px-16">
         <header
           id="intro"
-          ref={(el) => (sectionsRef.current[0] = el)}
+          ref={(el) => {
+            sectionsRef.current[0] = el;
+          }}
           className="min-h-screen flex items-center opacity-0"
         >
           <div className="grid lg:grid-cols-5 gap-16 w-full">
@@ -106,7 +145,7 @@ export default function Home() {
                           GitHub
                         </div>
                         <div className="text-sm text-muted-foreground">
-                          @igauravgupta
+                          igauravgupta
                         </div>
                       </div>
                     </Link>
@@ -135,8 +174,10 @@ export default function Home() {
                   </div>
 
                   <Link
-                    href="https://drive.google.com/file/d/1ZafehpLA1fSrw2R6HTaXm80Wcb3bLGw-/view?usp=sharing"
-                    download="Gaurav_Gupta_Resume.pdf"
+                    href="https://docs.google.com/document/d/1zTOS7wUjX78ZOsS0bVyIRUwsIJtXDMtS/edit?usp=sharing&ouid=107547194825143645921&rtpof=true&sd=true"
+                    download="Gaurav_Gupta_Resume.docx"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="group w-full p-4 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300 hover:shadow-sm flex items-center justify-center gap-2"
                   >
                     <svg
@@ -178,13 +219,11 @@ export default function Home() {
                 </div>
                 <div className="space-y-2">
                   <div className="text-foreground">
-                    Computer Science Undergrad
+                    CS Undergrad and SE Trainee
                   </div>
-                  <div className="text-muted-foreground">
-                    @ KIET Group of Institutions, Delhi
-                  </div>
+                  <div className="text-muted-foreground">@ vemakers</div>
                   <div className="text-xs text-muted-foreground">
-                    2022 — Present
+                    Jan 2025 — Present
                   </div>
                 </div>
               </div>
@@ -195,7 +234,7 @@ export default function Home() {
                 </div>
                 <div className="space-y-2">
                   <div className="flex gap-2">
-                    {["React.js", "Node.js", "Next.js", "MongoDB"].map(
+                    {["React.js", "Node.js", "Next.js", "Docker"].map(
                       (skill) => (
                         <span
                           key={skill}
@@ -224,7 +263,9 @@ export default function Home() {
 
         <section
           id="skills"
-          ref={(el) => (sectionsRef.current[1] = el)}
+          ref={(el) => {
+            sectionsRef.current[1] = el;
+          }}
           className="min-h-screen py-32 opacity-0"
         >
           <div className="space-y-16">
@@ -241,9 +282,6 @@ export default function Home() {
                   </div>
                   <div className="grid grid-cols-2 gap-3">
                     {[
-                      "HTML",
-                      "CSS",
-                      "JavaScript",
                       "React",
                       "Next.js",
                       "Zustand",
@@ -346,7 +384,9 @@ export default function Home() {
 
         <section
           id="work"
-          ref={(el) => (sectionsRef.current[2] = el)}
+          ref={(el) => {
+            sectionsRef.current[2] = el;
+          }}
           className="min-h-screen py-32 opacity-0"
         >
           <div className="space-y-16">
@@ -360,8 +400,8 @@ export default function Home() {
             <div className="space-y-12">
               {[
                 {
-                  duration: "Aug 2025 - Present",
-                  role: "SDE Intern",
+                  duration: "April 2025 - Present",
+                  role: "Software Engineer Trainee",
                   company: "vemakers",
                   description:
                     "Working on a comprehensive Hospital Management System with an admin panel, doctor portal, and integrated patient management features.",
@@ -375,8 +415,23 @@ export default function Home() {
                   link: "https://drive.google.com/file/d/1t6IiNBz8YutQvVl979smWWABV0c4wlsv/view?usp=sharing",
                 },
                 {
+                  duration: "Jan 2025 - April 2025",
+                  role: "Backend Developer Intern",
+                  company: "vemakers",
+                  description:
+                    "Developed a scalable ADHD Tracker backend with secure JWT authentication, optimized MongoDB queries (40% faster), REST APIs, and seamless Flutter integration, improving efficiency and data security by 50%.",
+                  tech: [
+                    "Node.js",
+                    "Express.js",
+                    "MongoDB",
+                    "GoogleAuth",
+                    "JWT",
+                  ],
+                  link: "https://drive.google.com/file/d/1-aUHlcTfBhDdlwl4cvzB331fhGEP4ZOm/view?usp=sharing",
+                },
+                {
                   duration: "Jul 2025 - Aug 2025",
-                  role: "Full Stack Intern",
+                  role: "MERN Development Intern",
                   company: "Anany Pahal Foundation",
                   description:
                     "Designed and developed the Anany Pahal Foundation website with an integrated payment gateway for seamless online donations.",
@@ -389,21 +444,7 @@ export default function Home() {
                   ],
                   link: "https://drive.google.com/file/d/1qFEfBhIOrGglB4dikjebKpThYegg2GRr/view",
                 },
-                {
-                  duration: "Jan 2025 - Feb 2025",
-                  role: "Backend Developer Intern",
-                  company: "vemakers - Freelance",
-                  description:
-                    "Developed a scalable ADHD Tracker backend with secure JWT authentication, optimized MongoDB queries (40% faster), REST APIs, and seamless Flutter integration, improving efficiency and data security by 50%.",
-                  tech: [
-                    "Node.js",
-                    "Express.js",
-                    "MongoDB",
-                    "GoogleAuth",
-                    "JWT",
-                  ],
-                  link: "https://drive.google.com/file/d/1-aUHlcTfBhDdlwl4cvzB331fhGEP4ZOm/view?usp=sharing",
-                },
+
                 {
                   duration: "Sept 2024 - Nov 2024",
                   role: "Full Stack Intern",
@@ -454,27 +495,7 @@ export default function Home() {
                       </p>
                     </div>
                     <div className="lg:col-span-1 flex justify-end">
-                      <Link
-                        href={job.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group/link text-muted-foreground hover:text-foreground transition-colors duration-300"
-                        title="View Experience Letter"
-                      >
-                        <svg
-                          className="w-4 h-4 transform group-hover/link:translate-x-1 transition-transform duration-300"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M17 8l4 4m0 0l-4 4m4-4H3"
-                          />
-                        </svg>
-                      </Link>
+                      {/* Experience links removed per user request; arrow/link intentionally omitted */}
                     </div>
                   </div>
                 </div>
@@ -485,7 +506,9 @@ export default function Home() {
 
         <section
           id="projects"
-          ref={(el) => (sectionsRef.current[3] = el)}
+          ref={(el) => {
+            sectionsRef.current[3] = el;
+          }}
           className="min-h-screen py-32 opacity-0"
         >
           <div className="space-y-16">
@@ -713,7 +736,9 @@ export default function Home() {
 
         <section
           id="connect"
-          ref={(el) => (sectionsRef.current[4] = el)}
+          ref={(el) => {
+            sectionsRef.current[4] = el;
+          }}
           className="py-32 opacity-0"
         >
           <div className="grid lg:grid-cols-2 gap-16">

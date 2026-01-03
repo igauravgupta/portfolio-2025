@@ -44,9 +44,9 @@ export default function Home() {
       role: "Software Engineer Trainee",
       company: "vemakers",
       description:
-        "Working on a comprehensive Hospital Management System with an admin panel, doctor portal, and integrated patient management features.",
+        "Building full-stack healthcare and e-commerce solutions that serve thousands of users daily. Architected a queue-based booking system with RabbitMQ and a real-time notification service using Redis and BullMQ. Love optimizing APIs and creating reusable component libraries that make developers' lives easier.",
       tech: ["React.js", "Node.js", "Express.js", "NeonDB", "Prisma"],
-    },
+    },  
     {
       duration: "Jan 2025 - April 2025",
       role: "Backend Developer Intern",
@@ -108,7 +108,7 @@ export default function Home() {
             <div className="lg:col-span-3 space-y-8">
               <div className="space-y-2">
                 <div className="text-sm text-muted-foreground font-mono tracking-wider">
-                  PORTFOLIO / 2025
+                  PORTFOLIO / 2026
                 </div>
                 <h1 className="text-6xl lg:text-7xl font-light tracking-tight">
                   Gaurav
@@ -174,7 +174,7 @@ export default function Home() {
                   </div>
 
                   <Link
-                    href="https://docs.google.com/document/d/1zTOS7wUjX78ZOsS0bVyIRUwsIJtXDMtS/edit?usp=sharing&ouid=107547194825143645921&rtpof=true&sd=true"
+                    href="https://drive.google.com/file/d/1m_H2A3SMeY-FIwrFk82lDNx241jdM8Qh/view?usp=sharing"
                     download="Gaurav_Gupta_Resume.docx"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -219,11 +219,11 @@ export default function Home() {
                 </div>
                 <div className="space-y-2">
                   <div className="text-foreground">
-                    CS Undergrad and SE Trainee
+                    CS Undergrad and SE Intern
                   </div>
                   <div className="text-muted-foreground">@ vemakers</div>
                   <div className="text-xs text-muted-foreground">
-                    Jan 2025 — Present
+                    Apr 2025 — Present
                   </div>
                 </div>
               </div>
@@ -398,63 +398,7 @@ export default function Home() {
             </div>
 
             <div className="space-y-12">
-              {[
-                {
-                  duration: "April 2025 - Present",
-                  role: "Software Engineer Trainee",
-                  company: "vemakers",
-                  description:
-                    "Working on a comprehensive Hospital Management System with an admin panel, doctor portal, and integrated patient management features.",
-                  tech: [
-                    "React.js",
-                    "Node.js",
-                    "Express.js",
-                    "NeonDB",
-                    "Prisma",
-                  ],
-                  link: "https://drive.google.com/file/d/1t6IiNBz8YutQvVl979smWWABV0c4wlsv/view?usp=sharing",
-                },
-                {
-                  duration: "Jan 2025 - April 2025",
-                  role: "Backend Developer Intern",
-                  company: "vemakers",
-                  description:
-                    "Developed a scalable ADHD Tracker backend with secure JWT authentication, optimized MongoDB queries (40% faster), REST APIs, and seamless Flutter integration, improving efficiency and data security by 50%.",
-                  tech: [
-                    "Node.js",
-                    "Express.js",
-                    "MongoDB",
-                    "GoogleAuth",
-                    "JWT",
-                  ],
-                  link: "https://drive.google.com/file/d/1-aUHlcTfBhDdlwl4cvzB331fhGEP4ZOm/view?usp=sharing",
-                },
-                {
-                  duration: "Jul 2025 - Aug 2025",
-                  role: "MERN Development Intern",
-                  company: "Anany Pahal Foundation",
-                  description:
-                    "Designed and developed the Anany Pahal Foundation website with an integrated payment gateway for seamless online donations.",
-                  tech: [
-                    "React.js",
-                    "Node.js",
-                    "Framer Motion",
-                    "Express.js",
-                    "MongoDB",
-                  ],
-                  link: "https://drive.google.com/file/d/1qFEfBhIOrGglB4dikjebKpThYegg2GRr/view",
-                },
-
-                {
-                  duration: "Sept 2024 - Nov 2024",
-                  role: "Full Stack Intern",
-                  company: "Sajal Tech Solutions Pvt. Ltd.",
-                  description:
-                    "Built a full-stack Q&A platform for car enthusiasts with a reputation system, 7+ optimized REST APIs, JWT authentication, and a responsive React-Tailwind frontend, reducing spam by 50% and boosting engagement by 40%.",
-                  tech: ["React", "Node.js", "Express.js", "MongoDB"],
-                  link: "https://drive.google.com/file/d/13gdVW2JhZ3agbOBXo7GfrgZjZvKdf7J6/view?usp=sharing",
-                },
-              ].map((job, index) => (
+              {experiences.map((job, index) => (
                 <div
                   key={index}
                   className="group py-8 border-b border-border/50 hover:border-border transition-colors duration-500"
